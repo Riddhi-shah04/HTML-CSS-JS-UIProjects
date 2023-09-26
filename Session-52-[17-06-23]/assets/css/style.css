@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --primary-color:#BECA5C;
+    --apricot-color:#E97878;
+    --silver-color:#c4c4c4;
+    --madalay-color:#a47519;
+    --wood-color:#633400;
+    --alabaster-color:#fafafa;
+    --black-color:#000000;
+    --white-color:#ffffff;
+    --dustygray-color:rgba(148, 147, 147, 0.349);
+    --willow-color:#aacb73;
+    --scorpion-color: #5f5e5e;
+    --dark-gray:#434343;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color:var(--black-color);
+}
+h1{
+    font-family: 'Gentium Plus', serif;
+    color:var(--apricot-color);
+}
+h2{
+    font-family: 'Gentium Plus', serif;
+    color:var(--primary-color);
+}
+h3, h4, h5, h6{
+    font-family: 'Gentium Plus', serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+span{
+    display: inline-block;
+}
+.section-spacing{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+/* header section css */
+header {
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    background-color: rgba(196, 196, 196, 0.49);
+}
+@media (max-width:991px){
+    header{
+        background-color: var(--dark-gray);
+    }
+}
+header .navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 28px;
+}
+header .nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color:#dc3545 !important;
+    border-radius: 5px;
+}
+
+/* banner section css */
+.banner-section{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: top 53% center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 582px;
+    padding: 68px 0;
+}
+.banner-section::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.726);
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+.banner-caption h1{
+    color:var(--bs-red);
+}
+
+/* favorite dish section css */
+.favorite-dish{
+    background-color: var(--alabaster-color);
+}
+.dish-box{
+    padding:0;
+}
+.dish-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px var(--dustygray-color);
+}
+@media (max-width:768px){
+    .dish-box:hover{
+        transform: scale(1);
+    }
+}
+.dish-image figure{
+    margin-bottom: 0;
+}
+.dish-box img{
+    width:100%;
+    min-height:400px;
+    max-height:400px;
+    object-fit: cover;
+}
+.dish-text h4{
+    color:var(--willow-color);
+}
+
+/* dish of the day section css */
+.dish-of-day img{
+    width: 100%;
+    object-fit: cover;
+}
+.dish-of-day .col-6 span{
+    color:var(--wood-color);
+    font-weight: 500;
+}
+
+/* photo grid */
+.photo-grid{
+    background-color: var(--alabaster-color);
+}
+.photo-grid .row > .col{
+    padding:0;
+}
+
+.grid-image {
+    max-width: 100%;
+    margin: 0 !important;
+    transition:.4s ease-in-out;
+}
+.grid-image img {
+    width: 100%;
+    object-fit: cover;
+}
+.grid-image:hover {
+    transform: scale(1.1);
+    opacity:0.5;
+}
+
+/* contact section css */
+.contact-section{
+    background-image: url(../images/contact-bg.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.contact-section::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.contact-section .container{
+    position: relative;
+    z-index: 1;
+}
+.contact-form .form-floating > textarea{
+    resize:none;
+    height:200px;
+}
+.submit-button button{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.submit-button .btn:hover{
+    background-color: var(--primary-color);
+    color:var(--white-color);
+    border-color: var(--primary-color);
+}
+
+/* footer section css */
+footer{
+    background-color: var(--scorpion-color);
+    color:var(--white-color);
+}
+footer .nav > li > a > i:hover{
+    color:var(--primary-color);
+}

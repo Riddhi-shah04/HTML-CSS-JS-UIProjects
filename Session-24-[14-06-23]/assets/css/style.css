@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+/* reset css starts */
+html, body, 
+header, main, footer, 
+div, section,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+i, 
+ul, li, 
+nav, 
+p, 
+a{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:#000000;
+    text-decoration: none;
+    vertical-align: middle;
+}
+img, i, button, input{
+    display: inline-block;
+}
+button{
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+/* reset css ends */
+
+/* common css */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: #1f1c1c;
+    color:#fff9f9;
+}
+.container{
+    max-width:1200px;
+    padding:0 20px;
+    margin: 0 auto;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+
+/* custom list css */
+.custom-list{
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+
+/* counter increment css */
+.list{
+    counter-reset: list;
+}
+.list > li::before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    border: 2px solid rgba(184, 181, 181, 0.855);
+    color:rgba(184, 181, 181, 0.855);
+    line-height: 30px;
+    font-size: 20px;
+} 
+
+/* list css */
+.list > li{
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* line css for sub content in li */
+.list > li::after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: calc(100% - 42px);
+    background-color: rgba(184, 181, 181, 0.855);
+    position: absolute;
+    left: 16px;
+    top: 32px;
+}
+
+/* sublist counter increment */
+.sublist{
+    counter-reset: sublist;
+}
+.sublist > li{
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* sublist increment css */
+.sublist > li::before{
+    counter-increment: sublist;
+    content:counter(list) "." counter(sublist);
+    position:absolute;
+    top:0;
+    left:8px;
+}
+
+p{
+    color:rgb(126, 124, 122);
+    margin-bottom: 10px;
+}

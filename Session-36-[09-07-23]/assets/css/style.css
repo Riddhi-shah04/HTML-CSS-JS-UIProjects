@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+/* reset css starts */
+html, body,
+header, main, footer,
+section, div,
+h1, h2, h3, h4, h5, h6, 
+p, span, ul, li
+img, figure,
+label, input,
+a{
+    margin:0;
+    padding:0;
+    font-size: 100%;
+}
+
+img{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#000000;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+/* reset css ends */
+
+/* common css */
+body{
+    background-color: #ffffff;
+    color:#000000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1240px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.box-design{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.box-design h2{
+    margin-bottom:20px;
+}
+.shape-parent{
+    display: inline-block;
+    padding: 19px;
+}
+.square{
+    background-color: #bdbdbd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 30px solid #ffda00;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+.box-one .square::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    top: -45px;
+    left: -45px;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 3px #000000;
+    border-radius: 100%;
+    clip-path: inset(0px 0px 0px 114px);
+}
+.box-one .square::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    top: -45px;
+    left: -45px;
+    right: 0;
+    z-index: -2;
+    box-shadow: 0 0 0 3px #000000;
+    border-radius: 100%;
+}
+
+/* box 2 css */
+.box-two .square::before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: -49px;
+    height: 232px;
+    width: 126px;
+    border: 3px solid #000000;
+    border-left-color: transparent;
+    border-radius: 0 120px 120px 0;
+}
+.box-two .square::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -49px;
+    height: 232px;
+    width: 126px;
+    border: 3px solid #000000;
+    border-right-color: transparent;
+    border-radius: 120px 0 0 120px;
+    z-index: -1;
+}
+
+/* box 3 css */
+.box-three .shape-parent{
+    padding: 72px;
+}
+.box-three .square{
+    border: none;
+    height: 140px;
+    width: 140px;
+}
+.box-three .square::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #ffda00;
+    transform: rotate(45deg);
+    z-index: -3;
+}
+.box-three .square::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -52px;
+    top:-52px;
+    height: 240px;
+    width: 240px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    z-index: -4;
+}

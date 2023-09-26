@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+</head>
+<body>
+    <main>
+        <section class="timer">
+            <div class="container"> 
+                <h1>Timer</h1> 
+                <div id="timer-watch" class="timer-watch">00:00:00</div>
+                <div class="time-input d-flex">
+                    <div class="start-time d-flex d-flex-column">
+                        <label for="time1">Start Time:</label>
+                        <input type="time" name="time1" id="time1">
+                    </div>
+                    <div class="end-time d-flex d-flex-column">
+                        <label for="time2">End Time:</label>
+                        <input type="time" name="time2" id="time2">
+                    </div>
+                </div>
+                <div class="btn-group d-flex">
+                    <button type="button" class="btn btn-medium btn-primary" id="start-btn" onclick="updateButtonStatus(); startTimer()">Start</button>
+                    <button type="button" class="btn btn-medium btn-secondary" id="capture-btn" onclick="updateButtonStatus(); captureTime()">Capture</button>
+                </div>
+                <h4 class="timeup" id="timeup">Time Out!</h4>
+                <p class="note" id="note">Note: Please enter the start time and end time.</p>
+                <p class="wait-message" id="wait-message">Note: Please wait until the timer starts</p>
+                <h4>Captured Times:</h4>
+                <ul id="captured-times-list"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

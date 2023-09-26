@@ -1,0 +1,47 @@
+.menu {
+    padding-top: 2.5rem;
+    padding-bottom: 2.875rem;
+  
+    .breadcrumb {
+      position: relative;
+      padding-bottom: 0.875rem;
+  
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--gallery-color);
+        left: 0;
+        right: 0;
+        height: 0.063rem;
+      }
+      > li {
+        position: relative;
+        padding-right: 1.875rem;
+  
+        &:not(:last-child) {
+          &::after {
+            content: "\002F";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0.75rem;
+            @include font-size(var(--size-17), 2.063rem);
+            color: rgba(102, 102, 102, 0.7);
+          }
+        }
+  
+        > a {
+          color: rgba(0, 111, 136, 0.7);
+          font-family: var(--primary-font);
+          @include font-size(var(--size-17), 2.063rem);
+  
+          &.active-menu {
+            color: rgba(102, 102, 102, 0.7);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }

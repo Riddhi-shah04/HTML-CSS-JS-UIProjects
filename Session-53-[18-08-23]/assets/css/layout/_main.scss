@@ -1,0 +1,20 @@
+.shopping-section{
+    padding-top:30px;
+    padding-bottom:30px;
+
+    .wrapper{
+        grid-template-columns: 2.061fr 1fr;
+
+        .title-wrapper{
+            margin-bottom: 20px;
+        }
+
+        .item-info{
+            column-gap: 20px;
+
+            p{
+                font-weight: 400;
+            }
+        }
+    }
+}

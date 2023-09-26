@@ -1,0 +1,25 @@
+:root{
+
+    // color variables
+    --white-color: #ffffff;
+    --black-color: #000000;  //font color
+    --light-grey-color: #EAEAE3; //border color
+    --dark-grey-color: #5F665A;
+
+
+    // font-family variables
+    --primary-font:'Myanmar MN';
+    --secondary-font: 'Lato', sans-serif;
+
+    // font-weight
+    --weight-400:400;
+    --weight-700:700;
+}
+
+// breakpoint variables
+$mobile: 576px;
+$tablet: 768px;
+$ipad: 991px;
+$desktop: 1280px; 
+$desktop-lg:1440px;
+$desktop-xlg:1600px;

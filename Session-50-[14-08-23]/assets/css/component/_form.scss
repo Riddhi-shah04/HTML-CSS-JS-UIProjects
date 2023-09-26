@@ -1,0 +1,146 @@
+.form-group{
+    @include flexbox;
+    @include flex-col;
+    
+    @include mq($ipad){
+        column-gap: 30px;
+    }
+    .mandatory{
+        &::before {
+            top: -17px;
+            left: 0;
+        }
+    }
+    li{
+        flex-direction: column;
+        align-items: center;
+        column-gap: 30px;
+        row-gap: 20px;
+        
+        @include mq($tablet){
+            flex-direction: row;
+        }
+        
+        &:not(:last-child){
+            margin-bottom: 20px;
+            @include mq($tablet){
+                margin-bottom: 33px;
+            }
+        }
+        
+        .form-control{
+            width:100%;
+
+            @include mq($ipad){
+                width:49.15%;
+            }
+        }
+        label{
+            margin-bottom: 8px;
+            color: var(--shark-color);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+        
+        &:nth-child(2){
+            @include mq($tablet){
+                margin-bottom: 32px;
+            }
+
+            label{
+                margin-bottom: 9px;
+            }
+        }
+        &:nth-child(3){
+            align-items: normal;
+            @include mq($tablet){
+                margin-bottom: 32px;
+            }
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea{
+            font-size: 14px;
+            line-height: 21px;
+            height: 35px;
+            padding:10px 12px;
+            @include border(1px, var(--gray-color));
+            font-family: var(--primary-font);
+            @include rounded(5px);
+
+            &::placeholder{
+                color: var(--shuttle-gray-color);
+            }
+
+            &:focus{
+                outline: none;
+                box-shadow:0 0 0 0.2rem rgba(187,63,66,.25);
+                border: 1px solid var(--orchid-color);
+            }
+        }
+
+        textarea{
+            resize: vertical;
+            min-height: 98px;
+            padding:6px 12px;
+        }
+        .radio-wrapper {
+            margin-left: 23px;
+            column-gap: 16px;
+        }
+
+        .uploaded-image{
+            height:102px;
+            width:102px;
+            border: 1px dashed #b8b8b8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            img{
+                max-height:100%;
+                max-width:100%;
+            }
+
+            .change-photo{
+                display: none;
+                width: 102px;
+                background: #bb3f42;
+                transition: all .2s ease-in-out;
+                color: #fff;
+                text-decoration: none;
+                position: absolute;
+                bottom: -1px;
+                left: -1px;
+                line-height: 32px;
+                text-align: center;
+            }
+
+            input{
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 10;
+                cursor: pointer;
+            }
+
+            &:hover{
+                .change-photo{
+                    display: block;
+                }
+            }
+        }
+
+        .custom-checkbox{
+            max-width: 80%;
+            width: 100%;
+            justify-content: space-between;
+            
+            @include mq($ipad){
+                max-width: 356px;
+            }
+        }
+    }
+}

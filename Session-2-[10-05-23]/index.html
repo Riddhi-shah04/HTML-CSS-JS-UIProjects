@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <header>
+            <h1> <center>Student Resistration Form</center></h1>
+            <fieldset>
+                <legend>Instructions</legend>
+                <ul>
+                    <li>Fill in all required fields to complete the registration form.</li>
+                    <li>Provide accurate and up-to-date information for each field to ensure smooth registration process.</li>
+                    <li>Use a valid email address as it will be used for communication purposes.</li>
+                    <li>Create a strong and unique password to protect your account.</li>
+                    <li>Review your entries before submitting the form to avoid any errors or omissions.</li>
+                </ul>
+            </fieldset>
+            <br>
+        </header>
+        <main>
+                <form>
+                    <!--To take name info. from user-->
+                    <div>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="eg. Riddhi Shah" autofocus required>
+                    </div><br>
+                    <!--To take email info. from user-->
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="eg. ayz@gmail.com" required>
+                    </div><br>
+                    <!--To take phone number info. from user-->
+                    <div>
+                        <label for="phone">Phone: </label>
+                        <input type="tel" name="phone" id="phone" placeholder="0000000000" maxlength="10" pattern="[0-9]{10}" required>
+                    </div><br>
+                    <!--To take dob info. from user-->
+                    <div>
+                        <label for="dob">Date of Birth: </label>
+                        <input type="date" name="dob" id="dob">
+                    </div><br>
+                    <!--To take gender info. from user-->
+                    <div>
+                    <label>Gender: </label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="male">Female</label>
+                    </div><br>
+                    <!--To fetch address info. from user-->
+                    <div>
+                        <label for="address">Address: </label>
+                        <input type="text" name="adress" id="address" maxlength="100" placeholder="Enter address" required>
+                    </div><br>
+                    <div>
+                        <label for="country">Country:</label>
+                        <input type="text" name="country" id="country" value="India" readonly>
+                    </div><br>
+                    <!--To fetch the state information -->
+                    <div>
+                        <label for="state">State:</label>
+                        <select name="state" id="state">
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat" selected>Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div><br>
+                    <!--To fetch technologies they know or have learned info. from user-->
+                    <div>
+                        <label>Technologies you know: </label><br>
+                        <input type="checkbox" name="tech1" id="tech1" value="C">
+                        <label for="tech1">C</label><br>
+                        <input type="checkbox" name="tech2" id="tech2" value="Java">
+                        <label for="tech2">Java</label><br>
+                        <input type="checkbox" name="tech3" id="tech3" value="Python">
+                        <label for="tech3">Python</label><br>
+                        <input type="checkbox" name="tech4" id="tech4" value="HTML & CSS">
+                        <label for="tech4">HTML & CSS</label><br>
+                        <input type="checkbox" name="tech5" id="tech5" value="JavaScript">
+                        <label for="tech5">JavaScript</label><br>
+                        <input type="checkbox" name="tech6" id="tech6" value="MySQL">
+                        <label for="tech6">MySQL</label>
+                    </div><br>
+                    <!--Technology you are interested in-->
+                    <div>
+                        <label>Technology you are intrested in: </label>
+                        <input type="search" id="tecnology" list="technology" name="technology" placeholder="Search for technology">
+                        <datalist id="technology">
+                            <option value="Frontend">
+                            <option value="Backend">
+                            <option value="Cloud">
+                            <option value="Ai">
+                            <option value="DataAnalytics">
+                            <option value="Android">
+                        </datalist>
+                    </div><br>
+                    <div>
+                        <label for="link">Add your LinkedIn profile:</label>
+                        <input type="url" id="link" name="link" placeholder="Enter LinkedIn URL">
+                    </div><br>
+                    <!--For password-->
+                    <div>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" placeholder="Enter password" required>
+                    </div><br>
+                    <!--To take passport size photo of user-->
+                    <div>
+                        <label for="photo">Select the file: </label>
+                        <input type="file" name="photo" id="photo">
+                        <p><b>Note:</b> Please upload your passport size photo.</p>
+                    </div><br>
+                    <div>
+                        <textarea rows="4" cols="25">Pelase add comments if you have any query.</textarea>
+                    </div><br>
+                    <!--Submit button to submit details-->
+                    <div>
+                        <button value="submit" name="submit">Submit</button>
+                    </div><br>
+                </form> 
+        </main>
+        <footer>
+            <h3><center>2023 All Rights Reserved.</center></h3>
+        </footer>
+    </body>
+</html>

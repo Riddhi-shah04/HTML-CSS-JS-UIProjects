@@ -1,0 +1,146 @@
+header {
+  background-color: var(--black-color);
+  height: 5.313rem;
+  display: flex;
+  align-items: center;
+
+  @include mq($mobile) {
+    height: 5.625rem;
+  }
+  @include mq($tablet) {
+    height: 5.625rem;
+  }
+  @include mq($ipad) {
+    height: 5.938rem;
+  }
+  @include mq($desktop) {
+    height: 7.5rem;
+  }
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  // header-left css
+  .header-left {
+    position: relative;
+  }
+
+  .logo {
+    @include border(0.875rem, var(--black-color));
+    border-radius: 100%;
+    position: absolute;
+    top: -1.75rem;
+    height: 6.25rem;
+    width: 6.25rem;
+
+    @include mq($mobile) {
+      top: -2.125rem;
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+    @include mq($tablet) {
+      top: -2.125rem;
+      height: 7.5rem;
+      width: 7.5rem;
+    }
+    @include mq($ipad) {
+      top: -2.5rem;
+      height: 8.75rem;
+      width: 8.75rem;
+    }
+    @include mq($desktop) {
+      top: -3rem;
+      height: 10.313rem;
+      width: 10.313rem;
+    }
+  }
+
+  .header-left a > img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+//   header-right css
+  .navigation {
+    align-items: center;
+  }
+  .header-right {
+    a {
+      color: var(--white-color);
+    }
+  }
+  .header-right {
+    a {
+      &:hover {
+        color: var(--sunglow-color);
+      }
+    }
+  }
+
+//  navigation bar css
+  .header-right {
+    display: none;
+    @include mq($ipad) {
+      display: flex;
+      padding-left: 8.75rem;
+    }
+    @include mq($desktop) {
+      padding-left: 12.25rem;
+    }
+    .nav-search-shop {
+      li {
+        &:not(:last-child) {
+          padding-right: 0.875rem;
+        }
+      }
+    }
+    .nav-menu {
+      margin-right: 0.625rem;
+      flex-wrap: wrap;
+
+      li {
+        padding-right: 1.125rem;
+      }
+
+      a {
+        @include font-family(var(--primary-font), 400);
+        @include font-size(0.625rem, 0.625rem);
+
+        @include mq($ipad) {
+          @include font-size(1.125rem, 1.125rem);
+        }
+
+        @include mq($desktop) {
+          @include font-size(1.25rem, 1.25rem);
+        }
+      }
+    }
+  }
+
+  // header icon css */
+  .nav-bar {
+    color: var(--white-color);
+  }
+  .nav-bar {
+    @include mq($ipad) {
+      display: none;
+    }
+    i {
+      font-size: 1.563rem;
+      padding: 1.875rem 0;
+
+      @include mq($mobile) {
+        font-size: 1.875rem;
+      }
+
+      @include mq($tablet) {
+        font-size: 2.188rem;
+      }
+
+    
+    }
+  }
+}

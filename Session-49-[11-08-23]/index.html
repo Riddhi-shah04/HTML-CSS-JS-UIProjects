@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Meet Booking</title>
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="stylesheet" href="assets/library/datepicker-bs.css">
+</head>
+<body>
+    <main>
+        <section class="booking-event-section">
+            <div class="booking-section">
+                <div class="container">
+                    <div class="title-section">
+                        <h1>Book Video Meet</h1>
+                    </div>
+                    <ul class="process-section">
+                        <li class="process-checkbox d-flex-column checked-radio">
+                            <div class="custom-checkbox d-flex">
+                                <input type="checkbox" name="checkbox-btn" id="checkbox1" class="checkbox-btn" checked>
+                                <label for="checkbox1"></label>
+                            </div>
+                            <span>Amber Heard</span>
+                        </li>
+                        <li class="process-checkbox d-flex-column active">
+                            <div class="custom-checkbox d-flex">
+                                <input type="checkbox" name="checkbox-btn" id="checkbox2" class="checkbox-btn">
+                                <label for="checkbox2"></label>
+                            </div>
+                            <span>Book Details</span>
+                        </li>
+                        <li class="process-checkbox d-flex-column">
+                            <div class="custom-checkbox d-flex">
+                                <input type="checkbox" name="checkbox-btn" id="checkbox3" class="checkbox-btn">
+                                <label for="checkbox3"></label>
+                            </div>
+                            <span>Payment</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meet-section">
+                <div class="container">
+                    <div class="video-wrapper d-flex d-flex-align">
+                        <div class="video-icon">
+                            <div class="icon-wrapper">
+                                <i class="icon-video"></i>
+                            </div>
+                            <span>New Request Of Video Meet With <span>Amber Heard</span></span>
+                        </div>
+                        <div class="video-cost">$50</div>
+                    </div>
+                    <div class="meet-time-wrapper d-flex d-flex-align">
+                        <span>Video Meet Duration</span>
+                        <span>10 Minutes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video-features-section">
+                <div class="container">
+                    <h6>Video Meet Features</h6>
+                    <ul>
+                        <li>Video Meet</li>
+                        <li>Get 3 minutes to talk about anything</li>
+                        <li>Snap a photo together</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="event-section">
+                <div class="container d-flex">
+                    <div class="wrapper">
+                        <h6>Select A Date</h6>
+                        <div class="calender">
+                            <div id="inline" data-date="08/17/2023"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <h6>Pick A Time Slot</h6>
+                        <ul class="list-wrapper">
+                            <li class="time-checkbox d-flex d-flex-align slot-active" id="time-checkbox">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot1" class="slot-btn" checked>
+                                    <label for="slot1"></label>
+                                </div>
+                                <span>08:10 PM To 08:20 PM</span>
+                            </li>
+                            <li class="time-checkbox d-flex d-flex-align">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot2" class="slot-btn">
+                                    <label for="slot2"></label>
+                                </div>
+                                <span>08:20 PM To 08:40 PM</span>
+                            </li>
+                            <li class="time-checkbox d-flex d-flex-align">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot3" class="slot-btn">
+                                    <label for="slot3"></label>
+                                </div>
+                                <span>08:40 PM To 08:50 PM</span>
+                            </li>
+                            <li class="time-checkbox d-flex d-flex-align">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot4" class="slot-btn">
+                                    <label for="slot2"></label>
+                                </div>
+                                <span>08:50 PM To 09:00 PM</span>
+                            </li>
+                            <li class="time-checkbox d-flex d-flex-align">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot5" class="slot-btn">
+                                    <label for="slot4"></label>
+                                </div>
+                                <span>09:00 PM To 09:10 PM</span>
+                            </li>
+                            <li class="time-checkbox d-flex d-flex-align">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot6" class="slot-btn">
+                                    <label for="slot5"></label>
+                                </div>
+                                <span>09:10 PM To 09:20 PM</span>
+                            </li>
+                            <li class="time-checkbox d-flex d-flex-align">
+                                <div class="custom-checkbox d-flex">
+                                    <input type="checkbox" name="time-slot" id="slot7" class="slot-btn">
+                                    <label for="slot6"></label>
+                                </div>
+                                <span>09:20 PM To 09:30 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <div class="container d-flex">
+                    <button type="button" class="btn btn-medium btn-outline">Buy Gift Card</button>
+                    <button type="button" class="btn btn-small btn-outline">Redeem Gift</button>
+                    <button type="button" class="btn btn-extra-large btn-primary" id="btn-payment">Make Payment</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/library/datepicker-full.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

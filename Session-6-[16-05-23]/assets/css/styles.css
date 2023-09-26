@@ -1,0 +1,314 @@
+/*reset css start*/
+html, body, div, span,
+h1, h2, p, blockquote, 
+a, address, cite, img, 
+b, u, i, center, footer, header, main nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    background:transparent;
+}
+footer, header, nav, main, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+nav, ul {
+	list-style: none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/*reset css end*/
+
+/*custom icons*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../font/');
+    src:  url('../font/icomoon.eot?ez34kj#iefix') format('embedded-opentype'),
+      url('../font/icomoon.ttf?ez34kj') format('truetype'),
+      url('../font/') format('woff'),
+      url('../font/') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-file:before {
+    content: "\e902";
+  }
+  .icon-book:before {
+    content: "\e901";
+  }
+  .icon-search:before {
+    content: "\e903";
+  }
+  .icon-services:before {
+    content: "\e90d";
+  }
+  .icon-about:before {
+    content: "\e90e";
+  }
+  .icon-youtube:before {
+    content: "\e910";
+  }
+  .icon-linkedin:before {
+    content: "\e911";
+  }
+  .icon-twitter:before {
+    content: "\e912";
+  }
+  .icon-facebook:before {
+    content: "\e913";
+  }
+  .icon-instagram:before {
+    content: "\e914";
+  }
+  .icon-home:before {
+    content: "\e90c";
+  }
+  .icon-email:before {
+    content: "\e906";
+  }
+  .icon-phone:before {
+    content: "\e90a";
+  }
+
+/*custom font family*/
+@font-face {
+    font-family: PlayfairDisplay-Regular;
+    src: url('../font/PlayfairDisplay-Regular.eot'),
+    url('../font/PlayfairDisplay-Regular.ttf'),
+    url('../font/PlayfairDisplay-Regular.woff'),
+    url('../font/PlayfairDisplay-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PlayfairDisplay-Italic;
+    src: url('../font/PlayfairDisplay-Italic.eot'),
+    url('../font/PlayfairDisplay-Italic.ttf'),
+    url('../font/PlayfairDisplay-Italic.woff'),
+    url('../font/PlayfairDisplay-Italic.woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: PlayfairDisplay-Medium;
+    src: url('../font/PlayfairDisplay-Medium.eot'),
+    url('../font/PlayfairDisplay-Medium.ttf'),
+    url('../font/PlayfairDisplay-Medium.woff'),
+    url('../font/PlayfairDisplay-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PlayfairDisplay-MediumItalic;
+    src: url('../font/PlayfairDisplay-MediumItalic.eot'),
+    url('../font/PlayfairDisplay-MediumItalic.ttf'),
+    url('../font/PlayfairDisplay-MediumItalic.woff'),
+    url('../font/PlayfairDisplay-MediumItalic.woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: PlayfairDisplay-Bold;
+    src: url('../font/PlayfairDisplay-Bold.eot'),
+    url('../font/PlayfairDisplay-Bold.ttf'),
+    url('../font/PlayfairDisplay-Bold.woff'),
+    url('../font/PlayfairDisplay-Bold.woff2');
+    font-weight: 700;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: PlayfairDisplay-BoldItalic;
+    src: url('../font/PlayfairDisplay-BoldItalic.eot'),
+    url('../font/PlayfairDisplay-BoldItalic.ttf'),
+    url('../font/PlayfairDisplay-BoldItalic.woff'),
+    url('../font/PlayfairDisplay-BoldItalic.woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+/*common css start*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: PlayfairDisplay-Regular;
+    font-size: 16px;
+    color:black;
+}
+/*css for header*/
+.main-header{
+    background-color: #f2f2f2;
+    height:70px;
+    box-shadow: 0px 0px 10px 0px rgba(102, 86, 190, 0.7);
+    clear:both;
+}
+.main-header .logo .logo-image{
+    height:70px;
+    width:90px; 
+}
+.main-header .header-nav{
+    float:right;
+}
+.main-header .header-nav .nav-menu-list{
+    padding:25px;
+}
+.main-header .header-nav .nav-menu-list li{
+    display: inline-block;
+}
+.main-header .header-nav .nav-menu-list i{
+    margin-right:6px;
+}
+.main-header .header-nav .nav-menu-list a{
+    color:#86c232;
+    padding:20px 10px;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-header .header-nav .nav-menu-list a:hover{
+    background-color:#86c232;
+    color:white;
+    border-radius: 5px;
+}
+
+/*css for main*/
+
+ /*css for banner*/
+
+ .main-content .banner-image{
+    background-image: url(../image/banner.avif);
+    background-position: center left 118px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    min-height: 500px;
+ }
+ .main-content .banner-caption{
+    padding:138px 20px 138px 100px;
+    background-color:rgba(228, 226, 225, 0.5);
+    line-height: 1.5;
+    max-width:500px;
+ }
+ .main-content .banner-caption h1{
+    font-family: PlayfairDisplay-BoldItalic;
+    font-style:italic;
+    font-size: 32px;
+    font-weight: bold;
+ }
+
+ /*services*/
+ .services{
+    padding:10px;
+    clear:both;
+    background-color: darkgrey;
+    min-height:250px;
+ }
+.services h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+.boxes{
+  clear:both;  
+}
+.box{
+    padding:23px;
+    float:left;
+    display: inline-block;
+    width:33%;
+    text-align: center;
+ }
+ .box:last-child{
+  float:none;
+ }
+ .box i{
+    padding: 15px;
+    font-size:50px;
+    font-weight: bold;
+    background-color: #3ab13a;
+    color:#d8d0d0;
+    border-radius: 50%;
+ }
+ 
+ .box h2{
+    padding:5px 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+ }
+.box:hover{
+    box-shadow: 2px 2px 2px 2px rgba(38, 60, 145, 0.7);
+}
+
+.box:hover i {
+    background-color: #ffffff;
+    color:#3ab13a;
+}
+/*footer*/
+ .main-footer{
+    background-color: black;
+    color:white;
+    padding:20px;
+ }
+ .main-footer .footer-socialmedia{
+    text-align: center;
+    padding:10px;
+ }
+ .main-footer .footer-socialmedia i{
+    margin-right: 10px;
+ }
+ .main-footer .footer-socialmedia a{
+    color: #f2f2f2;
+ }
+ .main-footer .footer-socialmedia .footer-menu li{
+    display:inline-block;
+ }
+ .main-footer .footer-copyrights p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+ }

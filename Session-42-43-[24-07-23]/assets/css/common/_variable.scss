@@ -1,0 +1,39 @@
+$mobile: 576px;
+$tablet: 768px;
+$ipad: 991px;
+$desktop: 1280px; 
+
+:root {
+  // font-family
+  --primary-font: "Quicksand", sans-serif;
+  --heading-font: "Economica", sans-serif;
+
+  // color
+  --primary-color: #dd991d;
+  --secondary-color: #ffeeb7;
+  --border-color: #ffe4c5;
+  --outline-color: #fff4e7;
+  --equator-color: #e3b359;
+  --sunglow-color: #faca36;
+  --saffron-color: #fac036;
+  --orange-color: #fba800;
+  --pearl-color: #e6dad4;
+  --linen-color: #fcf4ea;
+  --vanilla-color: #d0c0ac;
+  --white-color: #ffffff;
+  --metal-color: #272926;
+  --black-color: #000000;
+  --silver-color: #bfbfbf; 
+  --alto-color: #dbdada;
+  --gray-color: #e8e8e8;
+  --darado-color:#675956;
+
+  // font-size
+  --size-70: 4.375rem;
+  --size-50: 3.125rem;
+  --size-34: 2.125rem;
+  --size-20: 1.25rem;
+  --size-18: 1.125rem;
+  --size-16: 1rem;
+  --size-14: 0.875rem;
+}

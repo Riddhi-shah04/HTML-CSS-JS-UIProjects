@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+/* reset css starts */
+html, body,
+header, main, footer,
+section, div,
+h1, h2, h3, h4, h5, h6, 
+p, span, ul, li
+img, figure,
+label, input,
+a{
+    margin:0;
+    padding:0;
+    font-size: 100%;
+}
+
+img{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#000000;
+}
+span{
+    display: inline-block;
+}
+/* reset css ends */
+
+
+/* common css */
+body{
+    background-color: #ffffff;
+    color:#000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+.d-flex{
+    display: flex;
+}
+/* demo section css */
+.demo{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.demo h2{
+    margin-bottom:40px;
+    text-align: center;
+}
+
+/* box section css */
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.box{
+    background-color: #dcf17c;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+/* media query */
+@media screen and (max-width: 992px){
+    body{
+        background-color: #E3F4F4;
+    }
+    .demo h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .boxes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box{
+        background-color: #6784d1;
+        color:#ffffff;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        background-color:#d7bcf7;
+    }
+    .demo h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box{
+        background-color: #b47ef7;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 576px){
+    body{
+        background-color: #bafabd;
+    }
+    .demo h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .boxes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box{
+        background-color: #21ca62;
+        font-size: 40px;
+    }
+}

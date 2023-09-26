@@ -1,0 +1,285 @@
+/*reset css start*/
+html, body, div, span,
+h1, h2, p, blockquote, 
+a, address, cite, img, 
+b, u, i, center, footer, header, main nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    background:transparent;
+}
+footer, header, nav, main, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+nav, ul {
+	list-style: none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+/*reset css end*/
+
+/* common css start */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+
+/* default css start*/
+a{
+  font-family: 'Poppins', sans-serif;
+  color:black;
+}
+h1{
+  font-size: 38px;
+  font-weight: bold;
+}
+h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+p{
+  font-size: 20px;
+}
+/* default css ends */
+
+
+/* header css */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    clear:both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.navigation-bar{
+    float: right;
+}
+.navigation-bar ul li{
+    float: left;
+    padding: 0 20px;
+}
+.navigation-bar ul > li > a{
+    line-height: 3.7;
+    color:#72bfe2;
+    font-weight: 700;
+    font-size: 18px;
+    padding:5px;
+}
+.navigation-bar ul > li > a:hover{
+    color:white;
+}
+ /* main section css*/
+
+ /*banner section*/
+ .banner-section{
+    background-image: linear-gradient(to bottom right, #000957, #00B4D8);
+    min-height:400px;
+    padding:40px;
+    border-bottom-left-radius: 75px;
+    clear:both;
+ }
+.banner-section .caption{
+    color:white;
+    float:left;
+    width:50%;
+    padding:50px;
+}
+.banner-section .caption h2, .banner-section .caption p, .banner-section .caption button{
+    line-height: 1.5;
+}
+.banner-section .caption .buttons{
+    padding:15px 0;
+}
+.banner-section .caption button{
+    padding:15px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.banner-section .caption .started{
+    background-color: #149483;
+    color:white;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.banner-section .caption .started:hover{
+    background-color: white;
+    color:#149483;
+    border: 2px solid #149483;
+}
+.banner-section .caption .learn{
+    background-color: #146C94;
+    color:white;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.banner-section .caption .learn:hover{
+    background-color: white;
+    color:#146C94;
+    border: 2px solid #146c94;
+}
+.banner-section .images{
+    position: relative;
+    width:50%;
+    float:right;
+}
+.banner-section .images .img1{
+    transform: rotate(-10deg);
+    position:relative;
+    top: 28px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.banner-section .images .img2{
+    transform: rotate(-10deg);
+    position: absolute;
+    top:125px;
+    right:120px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* content section */
+.image-content-section {
+    padding: 5px 0;
+}
+.blog .content-div {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding:10px 10px;
+    line-height: 30px;
+}
+.content-div button{ 
+    margin-top: 5px;
+    padding:15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    color:white;
+    cursor:pointer;
+}
+.content-div button:hover{
+    border:2px solid black;
+    background-color: white;
+    color:black;
+}
+
+.blog .image-div {
+    display: inline-block;
+    width: 50%;
+}
+
+.blog .image-div img {
+    width: 100%;
+}
+.blog{
+    overflow: auto;
+}
+
+/* nth child */
+.content-image-section:nth-child(odd){
+    background-color: rgb(176, 231, 231);
+    clear:both;
+}
+.content-image-section:nth-child(odd) .blog .image-div{
+    float:left;
+    width: 50%;
+}
+.content-image-section:nth-child(odd) .blog .content-div{
+    float:right;
+}
+
+/* photo grid */
+.image-grid{
+    width:100%;
+    clear:both;
+}
+.gallery {
+    position: relative;
+    width: 33.33%;
+    float:left;
+    padding:10px;
+    cursor: pointer;
+}
+.image-box img{
+    border-radius: 10px;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 133px;
+    left:193px; 
+    opacity: 0.5;
+    visibility: hidden;
+}
+.gallery:hover .overlay {
+    opacity: 0.5;
+    visibility: visible;
+}
+.icon {
+    color: black;
+    background-color: white;;
+    font-size: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    border-radius: 10px;
+    padding:62px 115px;
+}
+.icon i{
+    display: inline-block;
+}
+
+.details h3, .details p{
+    line-height: 1.5;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color:white;
+    padding:20px;
+    clear:both;
+  }
+  footer .menu, .copyrights{
+    text-align: center;
+    padding:10px;
+  }
+  footer .footer-menu ul > li > a{
+    color: #f2f2f2;
+  }
+  footer .footer-menu ul > li{
+    display:inline-block;
+  }
+  footer .footer-copyrights p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }

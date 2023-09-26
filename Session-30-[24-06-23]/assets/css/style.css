@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+/* reset css */
+/* reset css starts */
+html, body,
+header, main, footer,
+section, div,
+h1, h2, h3, h4, h5, h6, 
+p, span, ul, li
+img, figure,
+label, input,
+a{
+    margin:0;
+    padding:0;
+    font-size: 100%;
+}
+
+img{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color:#000000;
+}
+span{
+    display: inline-block;
+}
+/* reset css ends */
+
+body{
+    font-size: 16px;
+    font-weight:20px;
+    line-height: 20px;
+    background-color: #ffffff;
+    color:#000000;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.grid-section-one h2, .grid-section-two h2{
+    padding-bottom: 40px;
+    text-align: center;
+}
+/* grid section one css */
+.grid-section-one, .grid-section-two{
+    padding:100px 0;
+}
+.grid-section-one .grid-section-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    height:800px;
+    width:800px;
+    margin: 0 auto;
+}
+.grid-section-one .grid-item{
+    background-color: #000000;
+}
+
+.grid-section-one .one{
+    grid-column: 1 / span 8;
+    grid-row: 1/ span 2;
+}
+.grid-section-one .two{
+    grid-column: 9 / span 4;
+    grid-row: 1/ span 3;
+}
+.grid-section-one .three{
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 4;
+}
+.grid-section-one .four{
+    grid-column: 7 / span 2;
+    grid-row: 3/ span 1;
+}
+.grid-section-one  .five{
+    grid-column: 7 / span 6;
+    grid-row: 4/ span 2;
+} 
+.grid-section-one .six{
+    grid-column: 7 / span 2;
+    grid-row: 6/ span 1;
+}
+.grid-section-one .seven{
+    grid-column: 9 / span 2;
+    grid-row: 6/ span 1;
+}
+.grid-section-one .eight{
+    grid-column: 11 / span 2;
+    grid-row: 6/ span 1;
+}
+
+/* grid section two css */
+.grid-section-two .grid-section-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    height:800px;
+    width:800px;
+    margin:0 auto;
+}
+.grid-section-two .grid-item{
+    background-color: #bec4c6;
+}
+.grid-section-two .one{
+    grid-column: 2 / span 2;
+    grid-row: 3/ span 4;
+}
+.grid-section-two .two{
+    grid-column: 4 / span 5;
+    grid-row: 1/ span 4;
+}
+.grid-section-two .three{
+    grid-column: 9 / span 2;
+    grid-row: 2/ span 4;
+}
+.grid-section-two .four{
+    grid-column: 4 / span 5;
+    grid-row: 5/ span 7;
+}
+.grid-section-two .five{
+    grid-column: 1 / span 3;
+    grid-row: 7/ span 5;
+}
+.grid-section-two .six{
+    grid-column: 9 / span 3;
+    grid-row: 6/ span 4;
+}
+.grid-section-two .seven{
+    grid-column: 9 /span 4;
+    grid-row: 10/ span 4;
+}
+.grid-section-two .eight{
+    grid-column: 3 / span 4;
+    grid-row: 12 / span 5;
+}
+.grid-section-two .nine{
+    grid-column: 7 / span 2;
+    grid-row: 12 / span 3;   
+}
+.grid-section-two .ten{
+    grid-column: 7 / span 2;
+    grid-row: 15 / span 4;
+}
+.grid-section-two .eleven{
+    grid-column: 9 / span 3;
+    grid-row: 14 / span 3;
+}

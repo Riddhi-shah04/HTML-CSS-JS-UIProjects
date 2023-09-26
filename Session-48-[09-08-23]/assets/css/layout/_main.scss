@@ -1,0 +1,152 @@
+.timer{
+    padding-top:3.125rem;
+    padding-bottom:3.125rem;
+
+    h1{
+        color: var(--tiber-color);
+        @include text-center;
+        padding-bottom: 1.25rem;
+
+        @include mq($desktop){
+            padding-bottom: 2.5rem;
+        }
+    }
+
+    .timer-watch{
+        display: flex;
+        @include justify-center;
+        margin-bottom: 1.25rem;
+        color: var(--denim-color);
+        @include font-family(var(--primary-font), 700);
+        @include font-size(2.188rem, normal);
+        
+        @include mq($tablet){
+            font-size: 2.5rem;
+            margin-bottom: 1.875rem;
+        }
+        
+        @include mq($ipad){
+            font-size: 2.813rem;
+        }
+        
+        @include mq($desktop){
+            font-size: 3.125rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    .time-input{
+        padding-bottom:1.25rem;
+        column-gap: 3.125rem;
+        row-gap: 1.25rem;
+        @include justify-center;
+        @include align-item-center;
+        flex-wrap: wrap;
+        
+        @include mq($tablet){
+            flex-wrap: nowrap;
+        }
+        @include mq($desktop){
+            padding-bottom: 2.5rem;
+        }
+        > div{
+            width: 100%;
+            margin-bottom: 1.25rem;
+
+            @include mq($desktop){
+                margin-bottom: 0;
+            }
+        }
+        label {
+            @include font-family(var(--primary-font), 700);
+            @include font-size(1.25rem, normal);
+            margin-bottom: 1.25rem;
+            color: var(--maroon-color);
+            
+            @include mq($tablet){
+                font-size: 1.25rem;
+            }
+
+            @include mq($ipad){
+                font-size: 1.375rem;
+            }
+
+            @include mq($desktop){
+                font-size: 1.5rem;
+            }
+        }
+        input{
+            height:3.75rem;
+            width:100%;
+            padding:0.625rem;
+            font-size: 1.25rem;
+            border: 0.125rem solid var(--denim-color);
+            border-radius: 0.313rem;
+
+            &:focus{
+                outline:none;
+                border-color:var(--congress-blue-color);
+            }
+
+            @include mq($tablet){
+                padding:0.625rem 1.875rem;
+            }
+            
+        }
+        input[type="time"] {
+            position: relative;
+        }
+        
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            display: block;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: transparent;
+        }
+    }
+
+    .btn-group{
+        @include justify-center;
+        @include align-item-center;
+        column-gap: 2.5rem;
+        padding-bottom: 1.875rem;
+    }
+
+    h4{
+        font-family: var(--primary-font);
+        color: var(--congress-blue-color);
+        margin-bottom: 1.25rem;
+    }
+    
+    ul{
+        li{
+            padding: 0.625rem;
+            background-color: var(--regent-blue-color);;
+            color: var(--falcon-color);
+            @include font-family(var(--primary-font), 500);
+            @include font-size(1.25rem, 1.563rem);
+            
+            &:nth-child(odd){
+                color: var(--harp-color);
+                background-color:var(--falcon-color);
+            }
+        }
+    }
+    .timeup{
+        text-align: center;
+        color:red;
+        transform: scale(1.05);
+        transition: .4s all ease-in-out;
+        display: none;
+    }
+    .note, .wait-message{
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.display-message{
+    display: block;
+}

@@ -1,0 +1,36 @@
+.radio-button {
+	position: relative;
+
+    label{
+        padding-left: 35px;
+    }
+
+	.tag{
+		transform: translateY(-1px);
+	}
+
+	.radio-option {
+		position: absolute;
+		background-color: #eee;
+		border-radius: 100%;
+		cursor: pointer;
+		height: 20px;
+		width: 20px;
+		left: 0;
+		top: 9px;
+        transform: translateY(-50%);
+
+        &:hover{
+            background: #ccc;
+        }
+	}
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="radio"]:checked + span {
+		border: 3px solid var(--primary-color);
+        background-color: var(--white-color);
+	}
+}

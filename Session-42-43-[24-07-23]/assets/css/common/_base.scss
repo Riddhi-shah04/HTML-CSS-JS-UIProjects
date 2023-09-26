@@ -1,0 +1,235 @@
+// reset css starts
+* {
+  box-sizing: border-box;
+  line-height: 100%;
+}
+
+html,
+body,
+header,
+main,
+footer,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li img,
+figure,
+label,
+input,
+textarea,
+a,
+i {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+header,
+main,
+footer,
+section,
+div,
+figure,
+nav {
+  display: block;
+}
+
+img {
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-family: var(--primary-font);
+  // @include font-size(var(--size-16), normal);
+  vertical-align: middle;
+  text-decoration: none;
+  color: var(--black-color);
+  display: inline-block;
+  outline: none;
+}
+
+span,
+i {
+  display: inline-block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+input,
+select {
+  &:focus {
+    outline: none;
+  }
+}
+
+// reset css ends
+
+// common css
+body {
+  @include font-family(var(--primary-font), 400);
+  @include font-size(var(--size-20), 2.25rem);
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.btn {
+  min-width: 7.5rem;
+  min-height: 1.875rem;
+  padding: 0.25rem 0.75rem;
+  @include font-family(var(--primary-font), 400);
+  @include font-size(var(--size-14), 1.875rem);
+  @include border(0.125rem, transparent);
+  background-color: var(--alto-color);
+  color: var(--black);
+  @include rounded(0.313rem);
+  @include text-align(center);
+}
+
+.btn-primary {
+  color: var(--black-color);
+  background-color: var(--sunglow-color);
+
+  &:hover {
+    color: var(--sunglow-color);
+    background-color: var(--black-color);
+  }
+}
+
+.btn-border {
+  color: var(--sunglow-color);
+  background-color: transparent;
+  border-color: var(--sunglow-color);
+
+  &:hover {
+    color: var(--black-color);
+    background-color: var(--sunglow-color);
+  }
+}
+
+.d-flex {
+  @include flexbox;
+}
+.text-align{
+  @include text-align(center);
+}
+.d-grid {
+  display: grid;
+}
+.d-flex-column {
+  flex-direction: column;
+}
+.d-flex-align {
+  align-items: center;
+}
+.text-golden {
+  color: var(--primary-color);
+}
+.text-sunglow {
+  color: var(--sunglow-color);
+}
+.text-milk {
+  color: var(--vanilla-color);
+}
+.text-black {
+  color: var(--black-color);
+}
+.text-white {
+  color: var(--white-color);
+}
+
+.dots {
+  @include flexbox;
+  @include text-align(center);
+  justify-content: center;
+
+  li {
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color: var(--white-color);
+    @include rounded(50%);
+
+    &.active {
+      background-color: var(--orange-color);
+    }
+
+    &:not(:last-child) {
+      margin-right: 0.625rem;
+    }
+  }
+}
+h1 {
+  @include font-family(var(--heading-font), 700);
+  @include font-size(3rem, 3rem);
+
+  @include mq($mobile) {
+    @include font-size(3.375rem, 3.375rem);
+  }
+
+  @include mq($tablet) {
+    @include font-size(3.75rem, 3.75rem);
+  }
+
+  @include mq($desktop) {
+    @include font-size(var(--size-70), 4.375rem);
+  }
+}
+
+h2 {
+  @include font-family(var(--heading-font), 700);
+  @include font-size(1.875rem, 1.875rem);
+
+  @include mq($mobile) {
+    @include font-size(2.25rem, 2.25rem);
+  }
+
+  @include mq($tablet) {
+    @include font-size(2.625rem, 2.625rem);
+  }
+
+  @include mq($desktop) {
+    @include font-size(var(--size-50), 3.125rem);
+  }
+}
+
+h3 {
+  @include font-family(var(--heading-font), 700);
+  @include font-size(1.75rem, 1.75rem);
+
+  @include mq($mobile) {
+    @include font-size(1.875rem, 1.875rem);
+  }
+
+  @include mq($tablet) {
+    @include font-size(2.063rem, 2.063rem);
+  }
+
+  @include mq($desktop) {
+    @include font-size(var(--size-34), 2.125rem);
+  }
+}
+p{
+  line-height: 2.25rem;
+}

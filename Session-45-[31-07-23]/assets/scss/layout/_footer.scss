@@ -1,0 +1,213 @@
+footer{
+    .footer-top{
+        background-color: var(--polar-color);
+        padding-top:3.125rem;
+        padding-bottom: 3.125rem;
+
+        .news-letter{
+            background-color: var(--tradewind-color);
+            color:var(--white-color);
+            padding:2.5rem 1.875rem;
+            margin-top:-9.063rem;
+            margin-bottom:3.125rem;
+            border-radius: 0.938rem;
+            justify-content: space-between;
+            flex-direction: column;
+
+            @include mq($ipad){
+                flex-direction: row;
+                padding:3.75rem 3.5rem;
+            }
+
+            .news-letter-caption{
+                text-align: center;
+                margin-bottom: 1.25rem;
+
+                @include mq($ipad){
+                    text-align: left;
+                    margin-bottom: 0;
+                    min-width: 51%;
+                    padding-right:10px;
+                }
+
+                h4{
+                    margin-bottom: 0.625rem;
+                }
+
+                p{
+                    opacity:0.8;
+                }
+            }
+
+            .news-letter-signin{
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 1.25rem;
+                width:100%;
+
+                @include mq($mobile){
+                    flex-direction: row;
+                }
+                
+                input{
+                    max-width: 33.75rem;
+                    width:100%;
+                    height: 3.438rem;
+                    padding: 0.625rem;
+                    border:none;
+                    border-radius: 0.313rem;
+                    
+                    @include mq($mobile){
+                        margin-right: 1.25rem;
+                    }
+                }
+
+                button{
+                    @include mq($mobile){
+                        padding: 0.75rem 0.475rem;
+                    }
+
+                    @include mq($desktop){
+                        padding: 0.75rem 0.45rem;
+                    }
+
+                    @include mq($desktop-xlg){
+                        padding: 0.75rem 0.775rem;
+                    }
+                }
+            }
+        }
+
+        .footer-menu{
+            background-color: var(--bluelagoon-color);
+            padding:1.469rem 1.25rem;
+            @include rounded(0.313rem);
+            max-width: 65.625rem;
+            justify-content: space-around;
+            margin: 0 auto;
+            flex-direction: column;
+
+            @include mq($tablet){
+                flex-direction: row;
+            }
+            
+            a{
+                color: var(--white-color);
+                font-weight: 700;
+                &:hover{
+                    color: var(--tradewind-color);
+                }
+            }
+        }
+        .footer-contact{
+            padding:3.125rem 0;
+            flex-direction: column;
+            max-width: 72.5rem;
+            margin:0 auto;
+            
+            @include mq($ipad){
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            > div{
+                &:not(:last-child){
+                    position: relative;
+                    padding-bottom: 1.25rem;
+                    
+                    @include mq($ipad){
+                        padding-bottom: 0;
+
+                        &::after{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            width: 0.125rem;
+                            height: 100%;
+                            top: 0;
+                            right: -3.438rem;
+                            z-index: 3;
+                            border-right: 0.125rem solid rgba(82, 172, 171, 0.5); 
+
+                            @include mq($desktop){
+                                right:-7.75rem;
+                            }  
+                        }
+                    }
+                }
+            }
+            
+            figure{
+                background-color: var(--bluelagoon-color);
+                @include rounded(50%);
+                height: 3.438rem;
+                width: 3.438rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .wrapper{
+                padding-left: 0.938rem;
+                p{
+                    color:var(--bluelagoon-color);
+                    font-weight: 700;
+                    font-size: var(--size-19);
+                }
+            }
+        }
+        .footer-tagline{
+            max-width: 50rem;
+            text-align: center;
+            padding: 1.656rem;
+            margin: 0 auto;
+            border-radius: 0.313rem;
+            font-style: italic;
+            background-color: var(--white-color);
+            
+            h5{
+                font-family: var(--secondary-font);
+                font-weight: 700;
+                color: var(--bluelagoon-color);
+            }
+        }
+    }
+
+
+    .footer-bottom{
+        background-color: var(--bluelagoon-color);
+        color:var(--white-color);
+        padding-top: 1.25rem;
+        padding-bottom:1.25rem;
+        .container{
+            flex-direction: column;
+            align-items: center;
+
+            @include mq($ipad){
+                flex-direction: row;
+            }
+        }
+        span{
+            @include text-center;
+            margin-bottom: 0.625rem;
+
+            @include mq($ipad){
+                margin-bottom: 0;
+            }
+        }
+        .social-media-menu{
+            > li{
+            padding-right:1.438rem;
+            > a{
+                &:hover{
+                    transform: scale(1.05);
+                }
+                img{
+                    height:1.838rem;
+                    width:1.838rem;
+                }
+            }
+            }
+        }
+    }
+}

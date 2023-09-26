@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+/* reset css */
+/* reset css starts */
+html,
+body,
+header,
+main,
+footer,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li img,
+figure,
+label,
+input,
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-size: 18px;
+  line-height: 33px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+}
+span {
+  display: inline-block;
+}
+/* reset css ends */
+
+body{
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    background-color: #ffffff;
+    line-height: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin:0 auto;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+h5{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+h6{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.text-center{
+    text-align: center;
+}
+.p-1{
+    padding: 30px 0;
+}
+.pb-1{
+    padding-bottom: 20px;
+}
+.m-1{
+    margin-bottom: 20px;
+}
+
+#myBox {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    min-width: 150px; 
+    min-height: 50px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(190, 173, 230);
+    border:none;
+    border-radius: 10px;
+}
+
+.language-text{
+    display: none;
+}

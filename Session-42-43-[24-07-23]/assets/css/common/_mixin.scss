@@ -1,0 +1,38 @@
+@mixin font-family($face, $weight){
+    font-family: $face;
+    font-weight: $weight;
+}
+
+@mixin font-size($font-size-value, $line-height-value){
+    font-size: $font-size-value;
+    line-height: $line-height-value;
+}
+
+@mixin rounded($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin text-align($text-align){
+    text-align: $text-align;
+}
+
+@mixin border($b-size, $b-color){
+    border: $b-size solid $b-color;
+}
+
+@mixin flexbox{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin mq($breakpoint){
+    @media(min-width: $breakpoint){
+        @content;
+    }
+}

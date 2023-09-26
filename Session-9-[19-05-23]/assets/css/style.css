@@ -1,0 +1,260 @@
+/*reset css start*/
+html, body, div, span,
+h1, h2, p, blockquote, 
+a, address, cite, img, 
+b, u, i, center, footer, header, main nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    background:transparent;
+}
+footer, header, nav, main, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+nav, ul {
+	list-style: none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+/*reset css end*/
+
+/* default css start*/
+a{
+  font-family: 'Poppins', sans-serif;
+  color:black;
+}
+h1{
+  font-size: 28px;
+  font-weight: bold;
+}
+h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+p{
+  font-size: 16px;
+}
+/* default css ends */
+
+/* css for icons */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8k2o7n');
+    src:  url('../fonts/icomoon.eot?8k2o7n#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?8k2o7n') format('truetype'),
+      url('../fonts/icomoon.woff?8k2o7n') format('woff'),
+      url('../fonts/icomoon.svg?8k2o7n#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-telegram:before {
+    content: "\e900";
+  }
+  .icon-eye:before {
+    content: "\e907";
+  }
+  .icon-purchase:before {
+    content: "\e904";
+  }
+  .icon-image:before {
+    content: "\e901";
+  }
+  .icon-fire:before {
+    content: "\e902";
+  }
+  .icon-search:before {
+    content: "\e903";
+  }
+  .icon-youtube:before {
+    content: "\e910";
+  }
+  .icon-linkedin:before {
+    content: "\e911";
+  }
+  .icon-twitter:before {
+    content: "\e912";
+  }
+  .icon-facebook:before {
+    content: "\e913";
+  }
+  .icon-instagram:before {
+    content: "\e914";
+  }
+
+
+/* common css */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.container{
+  padding:0 5px;
+  margin: 0 auto;
+  max-width: 1200px;
+} 
+/* header css */
+header{
+  clear:both;
+  position: absolute;    
+  z-index: 2;
+  width: 100%;
+}
+/* header navigation */
+.logo {
+  font-weight: 500;
+  line-height: 2.6;
+  color:white;
+  font-size: 25px;
+}
+.navigation{
+    float: right;
+}
+.navigation ul li{
+    float: left;
+    padding: 0 20px;
+}
+.navigation ul > li > a{
+    line-height: 3.5;
+    color:white;
+    font-weight: 700;
+    font-size: 18px;
+    padding:5px;
+}
+/* main section css */
+
+/* banner-section css */
+.banner-section{
+  background-image: url(https://preview.codeless.co/specular/default/wp-content/uploads/2014/11/3-compressed.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding:190px;
+  position: relative;
+  top:0;
+
+}
+.banner-section h1, .banner-section p{
+    line-height: 2;
+    color: white;
+}
+.banner-section > p{
+    font-size: 18px;
+}
+.buttons{
+    padding:10px;
+}
+/* tour button */
+button.tour{
+  color:rgb(248, 244, 244);
+  background: none;
+  border-radius: 5px;
+  padding:10px 20px;    
+  border:2px solid white;
+}
+button.tour:hover{
+  background-color: #528dd1;
+  border:2px solid #528dd1;
+  color: rgb(248, 244, 244);
+}
+/* purchase button */
+button.purchase{
+    color:white;
+    background: none;
+    border-radius: 5px;
+    padding:10px 20px;
+    background-color: #528dd1;
+    border:2px solid #528dd1;
+}
+button.purchase:hover{
+  background-color: rgb(248, 244, 244);
+  border:2px solid #528dd1;
+  color: #528dd1;
+}
+
+/*main section css*/
+.boxes{
+    padding:60px 0;
+    clear:both;
+}
+.box{
+    padding: 20px;
+    text-align: center;
+    width:24.5%;
+    float:left;
+}
+.box:last-child{
+  float:none;
+  display:inline-block;
+}
+.box h2{
+    padding:10px 0;
+}
+.box i{
+    color:#11b8c8;
+    font-size: 30px;
+    padding:30px;
+    background-color: rgb(221, 224, 228);
+    border-radius: 50%;
+    display: inline-block;
+}
+.box i:hover{
+    background-color:#11b8c8;
+    color: rgb(221, 224, 228);
+}
+
+/* footer content */
+footer{
+  background-color: black;
+  color:white;
+  padding:20px;
+}
+footer .menu, .social-handle, .copyrights{
+  text-align: center;
+  padding:10px;
+}
+footer .footer-menu ul > li > a{
+  color: #f2f2f2;
+}
+footer .footer-menu ul > li{
+  display:inline-block;
+}
+footer .footer-copyrights p{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}

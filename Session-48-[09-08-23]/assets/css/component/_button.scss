@@ -1,0 +1,35 @@
+.btn{
+    background-color: var(--bluelagoon-color);
+    color: var(--white-color);
+    border: 0.188rem solid transparent;
+    @include button;
+  }
+  
+  .btn-primary{
+    @include btn-primary;
+  }
+
+  .btn-secondary{
+    @include btn-secondary;
+  }
+
+  .btn-outline{
+    @include btn-outline;
+  }
+
+  .btn-small{
+    @include btn-small;
+  }
+  .btn-medium{
+    @include btn-medium;
+  }
+  .btn-big{
+    @include btn-big;
+  }
+
+  button{
+    &:disabled, .disabled{
+      opacity:0.5;
+      cursor: not-allowed;
+    }
+  }

@@ -1,0 +1,35 @@
+:root{
+
+    // color variables
+    --white-color: #ffffff;
+    --cod-black-color: #1a1a1a;
+    --red-color:#ff0000;
+    --black-color: #000000;
+    --mercury-color: #e6e6e6;
+    --green-color: #309e30;
+    --tiber-color: #06283D;
+    --congress-blue-color:#004980;
+    --denim-color: #177fce;
+    --regent-blue-color:#99d9e5;
+    --falcon-color: #85586F;
+    --harp-color: #d9ebe1;
+    --maroon-color: #b50e2e;
+    
+
+    // font-family variables
+    --primary-font: 'Montserrat', sans-serif;
+
+    // font-weight
+    --weight-400:400;
+    --weight-500:500;
+    --weight-600:600;
+    --weight-700:400;
+}
+
+// breakpoint variables
+$mobile: 576px;
+$tablet: 768px;
+$ipad: 991px;
+$desktop: 1280px; 
+$desktop-lg:1440px;
+$desktop-xlg:1600px;

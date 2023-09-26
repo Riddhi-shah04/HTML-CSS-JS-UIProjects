@@ -1,0 +1,233 @@
+/* icon css starts */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?arwbmo');
+    src:  url('../fonts/icomoon.eot?arwbmo#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?arwbmo') format('truetype'),
+      url('../fonts/icomoon.woff?arwbmo') format('woff'),
+      url('../fonts/icomoon.svg?arwbmo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-tick:before {
+    content: "\e900";
+  }
+  .icon-menu:before {
+    content: "\e901";
+  }
+/* icon css ends */
+
+*{
+    box-sizing: border-box;
+}
+/* reset css */
+html, body, 
+header, main, footer,
+div, section, 
+p, a,
+h1, h2, h3, h4,h5, h6,
+img, ul, li,
+nav{
+    margin:0;
+    padding: 0;
+    border: 0;
+	font-size: 100%;
+}
+
+footer, header, nav, main, section, div {
+	display: block;
+}
+
+ul, ol{
+    list-style: none;
+}
+a{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    vertical-align:baseline;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+/* common css */
+.container{
+    max-width: 1180px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.clearfix::before, .clearfix::after{
+    clear:both;
+    content:'';
+    display:block;
+}
+body{
+    background-color: #ffffff;
+    color:#000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* header css */
+header{
+    background-color: #d4d2d2;
+}
+header > .container > div{
+    display:inline-block;
+    padding:15px 0;
+}
+header > .container > div > a{
+    color:#000000;
+    padding:20px 0;
+}
+header .header-left a{
+    font-size: 30px;
+    line-height: 26.5px;
+}
+header .header-right{
+    float:right;
+}
+header .header-right > a > i{
+    font-size: 30px;
+    line-height: 26.5px;
+    display: inline-block;
+}
+/* banner image css */
+.banner-section{
+    padding-top:300px;
+    padding-bottom: 100px;
+}
+.banner-section .container{
+    position: relative;
+}
+.banner-section .banner-section-svg{
+    position: relative;
+}
+.banner-section .banner-section-svg svg{
+    fill:#ffdfdb;
+}
+.banner-section .banner-section-image{
+    height: 770px;
+    width: 763px;
+    position:absolute;
+    top: 0px;
+    left: 56px;
+    z-index: 2;
+}
+.banner-section .banner-section-image img{
+    height: auto;
+    width: 100%;
+}
+
+.banner-section .banner-section-content{
+    width: 467px;
+    background-image: linear-gradient(to right, #de91f5, #ffb0a4);
+    border-radius: 50px;
+    padding: 60px;
+    color: #ffffff;
+    position: relative;
+    margin-top: -400px;
+    float: right;
+    z-index: 2;
+}
+.banner-section-content::before{
+    content: '';
+    height: 228px;
+    width: 228px;
+    border-radius: 100%;
+    background-image: linear-gradient(#d3b1f4, #ffb0a4);
+    position: absolute;
+    right: 90px;
+    top: -450px;
+}
+.banner-section .banner-section-content h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size:48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    margin-bottom: 20px;
+    color:#702bb1;
+}
+.banner-section .banner-section-content ul > li{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 34px;
+}
+.banner-section-content ul > li:before{
+    font-family: "icomoon";
+    content: "\e900";
+    font-size: 18px;
+    line-height: 18px;
+    position: absolute;
+    top: 10px;
+    left:6px;
+}
+.banner-section-content p, .banner-section-content p > a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:28.8px;
+    margin-top: 30px;
+}
+.banner-section-content p > a{
+    color:#ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.banner-section-content button{
+    color:#702bb1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22.4px;
+    margin-top: 20px;
+    padding: 11.5px 37.2px;
+    border-radius: 30px;
+    background-color: transparent;
+    border:5px solid #ffffff;
+    cursor: pointer;
+}
+.banner-section-content button:hover{
+    background-color: #ffffff;
+}
+
+/* footer section css */
+footer{
+    background-color:#333333;
+    color:#ffffff;
+    padding:40px;
+}
+footer p{
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 20.48px;
+    text-align: center;
+}
+footer p > a{
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 20.48px;
+    color:#b8cdf0;
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+// breakpoint variables
+$mobile: 576px;
+$tablet: 768px;
+$ipad: 991px;
+$desktop: 1280px; 
+$desktop-lg:1440px;
+$desktop-xlg:1600px;
+
+:root{
+    // color variables
+    --white-color:#ffffff;
+    --shaft-color:#222222;
+    --transparentwhite-color:rgba(255, 255, 255, 0.8);
+    --cornflowerblue-color:rgba(193, 193, 193, 0.349);
+    --tradewind-color:#52aba9;
+    --bluelagoon-color:#006f88;
+    --transparentblack-color:rgba(0, 0, 0, 0.161);
+    --dovegrey:#666666;
+    --gallery-color:#ebebeb;
+    --polar-color:#e1f8f8;
+    --ribbonbluecolor:rgba(0, 102, 255, 0.2);
+    --black-color:#000000;
+    
+    --catskillwhite-color:#f3f9f9;
+    --transparentsilver-color: rgba(193, 193, 193, 0.443);
+
+
+    // font family variables
+    --primary-font: 'Nunito', sans-serif;
+    --secondary-font: 'Playfair Display', serif;
+
+    // font size variables
+    --size-54: 3.375rem;
+    --size-34: 2.125rem;
+    --size-26: 1.625rem;
+    --size-20: 1.25rem;
+    --size-19: 1.188rem;
+    --size-18: 1.125rem;
+    --size-17: 1.063rem;
+    --size-16: 1rem;
+}

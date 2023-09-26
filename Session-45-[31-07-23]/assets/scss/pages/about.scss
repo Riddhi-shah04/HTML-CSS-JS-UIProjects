@@ -1,0 +1,307 @@
+@import '../common/variables';
+@import '../common/font';
+@import '../common/mixin';
+@import '../common/base';
+
+@import '../layout/header';
+@import '../layout/footer';
+
+@import '../components/breadcrumb';
+
+// about section css
+.about-section {
+    padding-bottom: 1.375rem;
+    position: relative;
+    
+    @include mq($tablet){
+      padding-bottom: 3.375rem;
+    }
+    
+    @include mq($desktop){
+      padding-bottom: 4.375rem;
+      height: 100vh;
+    }
+
+    .container {
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+
+      @include mq($ipad){
+        flex-direction: row;
+      }
+    }
+    .wrapper {
+      width: 100%;
+      
+      @include mq($ipad){
+        padding-right: 1.25rem;
+        max-width:50%;
+      }
+      @include mq($desktop){
+          max-width: 48.125rem;
+        }
+        .about-title {
+            padding-bottom: 0.875rem;
+
+            h2{
+              padding-bottom: 1.25rem;
+            }
+        }
+        .about-text {
+          padding-bottom: 0.625rem;
+            > p {
+                &.spacing {
+                    padding-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+    .about-image {
+      @include mq($desktop){
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 35%;
+        height: 90vh;
+
+        @include mq($desktop-lg){
+          width: 44%;
+
+        }
+          &::before {
+            content: "";
+            display: block;
+            background-image: url('../../images/shape.png');
+            background-repeat: no-repeat;
+            height: 5.438rem;
+            width: 9.125rem;
+            position: absolute;
+            bottom: -2.75rem;
+            left: -4.125rem;
+            z-index: 2;
+          }
+
+          > img {
+            border-top-left-radius: 15.625rem;
+          }
+
+      }
+      > img {
+        object-fit: cover;
+        object-position: right center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    
+        &::after {
+          content: "";
+          display: block;
+          background-color: rgba(0, 0, 0, 0.05);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  
+  // video section css 
+  .video-section {
+    padding-top: 6.625rem;
+    padding-bottom: 1.25rem;
+    background-image: url('../../images/video-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @include mq($tablet){
+      padding-top: 7.625rem;
+      padding-bottom: 3.25rem;
+    }
+
+    @include mq($ipad){
+      padding-top: 11.625rem;
+      padding-bottom: 4.25rem;
+    }
+
+    @include mq($desktop){
+      padding-top: 17.625rem;
+      padding-bottom: 6.25rem;
+    }
+  
+    .container {
+      max-width: 78.75rem;
+    }
+    .video {
+      position: relative;
+      > iframe {
+        border: 0.125rem solid var(--white-color);
+        box-shadow: 0 0 1.625rem rgba(0, 0, 0, 0.161);
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: 100%;
+
+        @include mq($tablet){
+          border-width: 4px;
+        }
+
+        @include mq($ipad){
+          border-width: 11px;
+        }
+
+      }
+      .video-btn {
+          inset: 0;
+          cursor: pointer;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            > img {
+              background-color: var(--tradewind-color);
+              height: 4.6rem;
+              width: 4.6rem;
+              border-radius: 50%;
+              object-fit: none;
+
+              @include mq($mobile){
+                height: 4.75rem;
+                width: 4.75rem;
+              }
+              
+              @include mq($tablet){
+                height: 5.25rem;
+                width: 5.25rem;
+              }
+
+              @include mq($ipad){
+                height: 5.75rem;
+                width: 5.75rem;
+              }
+
+              @include mq($desktop){
+                height: 6.25rem;
+                width: 6.25rem;
+              }
+            }
+        }  
+    }
+}
+
+  
+  // technology section css
+  .technology-section {
+    background-image: url('../../images/technology-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 5rem;
+    padding-bottom: 8.5rem;
+
+    @include mq($tablet){
+      padding-top: 7rem;
+    padding-bottom: 10.5rem;
+    }
+    
+    @include mq($desktop){
+      padding-top: 11.5rem;
+      padding-bottom: 12.5rem;
+    }
+  
+    .technology-title {
+      padding-bottom: 1.813rem;
+      position: relative;
+  
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../../images/tech-line.png);
+        height: 7.125rem;
+        width: 0.875rem;
+        transform: rotate(90deg);
+        top: 0;
+        left: 8.75rem;
+
+        @include mq($tablet){
+          height: 9.125rem;
+        }
+
+        @include mq($ipad){
+          top: 0.625rem;
+          left: 10.25rem;
+        }
+
+        @include mq($desktop){
+          top: 1rem;
+          left: 11.75rem;
+        }
+      }
+    }
+  
+    .technology-grid {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1.875rem;
+
+      @include mq($tablet){
+        grid-template-columns: repeat(2, 1fr);
+      } 
+
+      @include mq($desktop){
+        grid-template-columns: repeat(4, 1fr);
+      } 
+  
+      .tech-box {
+        row-gap: 1.875rem;
+        > h6 {
+          text-transform: uppercase;
+        }
+        .ellipse {
+          > figure {
+            max-width: 4.063rem;
+            
+            @include mq($tablet){
+              max-width: 5.063rem;
+            }
+
+            @include mq($desktop){
+              max-width: 6.063rem;
+            }
+      
+            > img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  
+    .technology-text {
+      max-width: 75.375rem;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 2.375rem;
+      padding-top: 1.75rem;
+
+      @include mq($tablet){
+        padding-bottom: 3.375rem;
+        padding-top: 3.05rem;
+      }
+      
+      @include mq($desktop){
+        padding-bottom: 4.375rem;
+        padding-top: 3.75rem;     
+      }
+
+      p{
+        &.spacing{
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+  }

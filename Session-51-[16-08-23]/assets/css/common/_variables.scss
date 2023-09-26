@@ -1,0 +1,24 @@
+:root{
+
+    // color variables
+    --white-color: #ffffff;
+    --black-color: #000000;  //font color
+    --mercury-color: #e6e6e6; //border color
+    --wild-sand-color: #f6f6f6; //faq background color
+
+
+    // font-family variables
+    --primary-font: 'DM Sans', sans-serif;
+
+    // font-weight
+    --weight-400:400;
+    --weight-700:400;
+}
+
+// breakpoint variables
+$mobile: 576px;
+$tablet: 768px;
+$ipad: 991px;
+$desktop: 1280px; 
+$desktop-lg:1440px;
+$desktop-xlg:1600px;

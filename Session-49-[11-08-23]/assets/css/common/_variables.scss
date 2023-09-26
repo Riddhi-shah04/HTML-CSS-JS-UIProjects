@@ -1,0 +1,32 @@
+:root{
+
+    // color variables
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --rose-color:#FD35B5;
+    --scarlet-color: #FF1616;
+    --silver-color: #A8A8A8;
+    --transparent-black-color: rgba(0, 0, 0, 0.161);
+    --mercury-color: #e6e6e6;
+    --concrete-color: #F3F3F3;
+    --cod-black-color: #1a1a1a;
+
+    --btn-gradient: linear-gradient(90deg, #FD35B5 0%, #FF1616 100%);
+
+    // font-family variables
+    --primary-font: 'DM Sans', sans-serif;
+
+    // font-weight
+    --weight-400:400;
+    --weight-500:500;
+    --weight-600:600;
+    --weight-700:400;
+}
+
+// breakpoint variables
+$mobile: 576px;
+$tablet: 768px;
+$ipad: 991px;
+$desktop: 1280px; 
+$desktop-lg:1440px;
+$desktop-xlg:1600px;

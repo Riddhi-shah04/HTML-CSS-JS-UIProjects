@@ -1,0 +1,232 @@
+/*reset css start*/
+html, body, div, span,
+h1, h2, p, blockquote, 
+a, address, cite, img, 
+b, u, i, center, footer, header, main nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    background:transparent;
+}
+footer, header, nav, main, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+nav, ul {
+	list-style: none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+nav, ul {
+	list-style: none;
+}
+/* reset css ends */
+
+/* default css start*/
+h1{
+    font-size: 28px;
+    font-weight: 600;
+}
+h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+}
+/* default css end */
+
+/*common css*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+header{
+    padding-top:10px;
+    box-shadow: 2px 2px 10px 2px rgb(213, 92, 230);
+}
+/*header one*/
+.header-top{
+    text-align: center;
+    background-color: white;
+}
+.header-top h1{
+    font-family: 'Bad Script', cursive;
+    color:#640464;
+    font-size: 30px;
+}
+.header-top h4{
+    font-family: 'Baskervville', serif;
+    color:#210062;
+}
+/*header two*/
+.header-bottom{
+    background-color: #d66fd6;
+}
+.header-bottom nav > ul{
+    display:inline-block;
+}
+.header-bottom nav > ul > li{
+    display:inline-block;
+    padding: 0 10px;
+}
+.header-bottom nav > ul > li > a{
+    color:purple;
+    line-height: 3;
+}
+.header-bottom nav li a:hover{
+    color:white;
+    border-bottom: #640464 solid 5px;
+} 
+
+/*main section*/
+
+/*banner section*/
+.banner-section{
+    background-image: url(../images/bgimg.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding:50px 0px;   
+}
+.banner-section .banner-dish-content{
+    clear: both;
+    margin:0 200px;
+}
+.banner-section .dish-content{
+    float:left;
+    background-color: rgb(255, 255, 255);
+    width:50%;
+    text-align: center;
+    padding:50px 45px;
+    height:400px;
+    line-height:1.5;
+}
+.banner-section .dish-content img {
+    width: 150px;
+}
+
+.banner-section .image {
+    width: 50%;
+    display: inline-block;
+    padding: 47px 0;
+}
+.banner-section .image img {
+    width: 280px;
+}
+.dish-content button{
+    background-color: rgb(255, 136, 0);
+    color:white;
+    border: none;
+    padding:10px;
+    border-radius: 5px;
+}
+
+/*recipe section */ 
+.recipe-section {
+    padding: 50px 0;
+}
+
+.recipe-section h2,
+.recipe-section p{
+    text-align: center;
+    padding:10px 0;
+}
+
+.recipe-blog{
+    clear:both;
+}
+
+.recipe-blog .recipe-image{
+    float: left;
+    width: 50%;
+    padding: 100px 0;
+    display: inline-block;
+}
+
+.recipe-blog .recipe-image img {
+    width: 100%;
+    display: block;
+    height: 300px;
+    position: relative;
+    left: 50px;
+}
+
+.recipe-blog .recipe-content {
+    width: 50%;
+    display: inline-block;
+    background-color: #dd975e;
+    padding: 100px 70px;
+    height: 500px;
+    text-align: center;
+    line-height: 1.5;
+}
+.recipe-section:nth-child(even) {
+    background-image:linear-gradient(to bottom right, rgb(161, 238, 154), rgb(241, 149, 218));
+}
+.recipe-section:nth-child(odd) {
+    background-image:linear-gradient(to bottom right, rgb(240, 156, 240), rgb(103, 177, 247));
+}
+
+.recipe-section:nth-child(odd) .recipe-blog .recipe-image{
+    float: right;
+}
+
+.recipe-section:nth-child(odd) .recipe-blog .recipe-image img{
+    left:-50px;
+}
+
+/*footer*/
+footer{
+    background-color: black;
+    color:white;
+    padding:20px;
+ }
+footer .footer-pannel{
+    text-align: center;
+    padding:10px;
+ }
+ footer .footer-pannel a{
+    color: #f2f2f2;
+ }
+ footer .footer-pannel .menu{
+    padding:8px 0;
+ }
+ footer .footer-pannel .menu li{
+    display:inline-block;
+ }
+ footer .footer-copyrights p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+ }

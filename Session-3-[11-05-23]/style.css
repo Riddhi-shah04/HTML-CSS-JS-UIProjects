@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: white;
+    color:black;
+    background: #ebcaeb;
+    font-family: 'Bitter', serif;
+}
+/*Header One*/
+.header-top{
+    text-align: center;
+    background-color: white;
+}
+.header-top h1{
+    font-family: 'Bad Script', cursive;
+    color:#640464;
+}
+.header-top h4{
+    font-family: 'Baskervville', serif;
+    color:#210062;
+}
+/*Header Two*/
+.header-bottom{
+    font-family: 'Lora', serif;
+    background-color: #d66fd6;
+    padding: 10px;
+}
+.header-bottom li{
+    list-style: none;
+    display: inline-block;
+}
+.header-bottom a{
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    vertical-align:middle;
+}
+.header-bottom a:hover{
+    text-align: center;
+    text-decoration: none;
+    color:aliceblue;
+    padding:10px;
+    border-bottom: #640464 solid 5px; 
+}
+/*Image container*/
+.image-container{
+    background-image: url(image/welcome_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    width:100%;
+    height:400px;
+}
+.image-text{
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(77, 9, 77);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.about{
+    padding:10px 40px;
+    text-align: center;
+}
+.about h2{
+    font-family: 'Lora', serif;
+    float:right;
+    color:#640464;
+}
+.about p{
+    text-align: justify;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    clear:both;
+}
+
+/*Menu*/
+.menu h2{
+    font-family: 'Lora', serif;
+    text-align: center;
+    color:#640464;
+}
+.items{
+    text-align: center;
+    padding:20px;
+}
+.item-one, .item-two, .item-three{
+    padding:10px 22px;
+    display: inline-block;
+    height:auto;
+    width:29%;
+    border:#210062 solid;
+    border-radius:5px;
+    background-color: #c7a0c7;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.item-one img, .item-two img, .item-three img{
+    height:250px;
+    width:300px;
+}
+.item-one h4, .item-two h4, .item-three h4{
+    text-align: center;
+    color:#210062;
+}
+.item-one li, .item-two li, .item-three li{
+    text-align: left;
+    color: #10012c;
+}
+.item-one li{
+    list-style: square;
+}
+.item-two li{
+    list-style:decimal;
+}
+.item-three li{
+    list-style:lower-alpha;
+}
+/*Footer styling*/
+footer{
+    text-align: center;
+    font-family: 'Lora', serif;
+    background-color: #d66fd6;
+}

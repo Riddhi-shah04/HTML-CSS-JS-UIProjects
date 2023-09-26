@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+</head>
+<body>
+    <section class="information-section">
+        <div class="container">
+            <div class="wrapper">
+                <div class="form-body">
+                    <div class="title-section d-flex">
+                        <h5>Form</h5>
+                        <span>Fields marked with<span class="mandatory"></span>are mandatory.</span>
+                    </div>
+                    <form class="form-section">
+                        <ul class="form-group">
+                            <li class="form-row d-flex">
+                                <div class="form-control d-flex d-flex-column">
+                                    <label for="name">Name<span class="mandatory"></span></label>
+                                    <input type="text" name="name" id="name" placeholder="Name">
+                                    <div id="name-error" class="error"></div>
+                                </div>
+                                <div class="form-control d-flex d-flex-column">
+                                    <label for="email">Email<span class="mandatory spacing"></span></label>
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                    <small id="email-error" class="error"></small>
+                                </div>
+                            </li>
+                            <li class="form-row d-flex">
+                                <div class="form-control d-flex d-flex-column">
+                                    <label for="phone">Contact Number<span class="mandatory spacing"></span></label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Contact Number" maxlength="10">
+                                    <small id="phone-error" class="error"></small>
+                                </div>
+                                <div class="form-control d-flex mt-4">
+                                    <label>Gender<span class="mandatory spacing"></span></label>
+                                    <div class="radio-wrapper d-flex">
+                                        <div class="radio-button">
+                                            <label for="radio-option1">
+                                                <span class="tag">Male</span>
+                                                <input type="radio" id="radio-option1" name="radio-btn" value="male" checked>
+                                                <span for="radio-option1" class="radio-option"></span>
+                                            </label>
+                                        </div>
+                                        <div class="radio-button">
+                                            <label for="radio-option2">
+                                                <span class="tag">Female</span>
+                                                <input type="radio" id="radio-option2" name="radio-btn" value="female">
+                                                <span for="radio-option2" class="radio-option"></span>
+                                            </label>
+                                        </div>  
+                                    </div>
+                                    <small class="gender-error"></small>
+                                </div>
+                            </li>
+                            <li class="form-row d-flex">
+                                <div class="form-control d-flex d-flex-column">
+                                    <label for="address">Address</label>
+                                    <textarea name="address" id="address" cols="30" rows="3" placeholder="Address"></textarea>
+                                    <small class="error" id="address-error"></small>
+                                </div>
+                                <div class="form-control d-flex d-flex-column">
+                                    <label for="Logo">Logo</label>
+                                    <div class="uploaded-image">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/file-upload.jpeg" alt="uploaded file" id="preview-image">
+                                        </div>
+                                        <a href="#" class="change-photo">Change</a>
+                                        <input type="file" name="picture" id="file">
+                                    </div>
+                                    <small class="error"></small>
+                                </div>
+                            </li>
+                            <li class="form-row d-flex">
+                                <div class="form-control d-flex">
+                                    <div class="custom-checkbox d-flex">
+                                        <label>Allow Multiple Login</label>
+                                        <div class="toggle-switch">
+                                            <label for="switch-slider-one" class="switch-slider">
+                                                <input type="checkbox" name="switch-slider" id="switch-slider-one">
+                                                <span data-checked="&#10004;" data-unchecked="&#x2716;"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control d-flex">
+                                    <div class="custom-checkbox d-flex">
+                                        <label>Enquiry Email Alerts</label>
+                                        <div class="toggle-switch">
+                                            <label for="switch-slider-two" class="switch-slider">
+                                                <input type="checkbox" name="switch-slider" id="switch-slider-two">
+                                                <span data-checked="&#10004;" data-unchecked="&#x2716;"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="form-button">
+                    <div class="button-group d-flex">
+                        <button type="submit" class="btn btn-medium btn-primary" id="submit-btn">Update</button>
+                        <button type="button" class="btn btn-small btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
